@@ -132,7 +132,7 @@ class CockpitRessources {
     private var cockpits: [String: CockpitData]?
     /// All cockpits names id obtained from the resource file
     var cockpitNames: [String]? {
-        return cockpits?.map { $0.key }
+        return cockpits?.map(\.key)
     }
 
     /// Constructor
